@@ -8,3 +8,10 @@ This is a desktop GUI application designed to allow you to write documents in ma
 * Split view.
 * Automatic render.
 * Convert to PDF on save.
+
+## To start
+
+``` bash
+  npm i
+  npm run start
+```
