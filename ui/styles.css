@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+
+  display: grid;
+  grid-template-areas:
+    'controls controls'
+    'input output';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px auto;
+  gap: 5px;
+}
+
+body > div {
+  border: 1px solid black;
+}
+
+.controls { 
+  grid-area: controls;
+}
+
+.input { 
+  grid-area: input;
+  display: flex;
+}
+
+.output { 
+  grid-area: output;
+  padding: 5px;
+}
+
+.text{
+  resize: none;
+  flex: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  padding: 5px;
+}
